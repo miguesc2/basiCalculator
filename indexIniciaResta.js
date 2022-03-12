@@ -35,14 +35,14 @@ function suma(e) {
     totalDisplay = totalDisplay + parseInt(displayActual);
     document.getElementById("display").value = totalDisplay;
   }
-  aSuma.setAttribute(disabled, true)
-
+  
   displayActual = "";
   sumar = true;
   restar = false;
   multiplicar = false
   dividir = false
   primerOperacion = false;
+  //aSuma.setAttribute(disabled, true)
   //e.target.removeEventListener(e.type, suma)
 }
 
