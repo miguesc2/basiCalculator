@@ -22,7 +22,6 @@ function dNumbers(numeroPulsado) {
 
 //SUMA__________________________________________________________________________
 function suma(e) {
-  //e.target.addEventListener(e.type, suma)
   if (restar) {
     totalDisplay = totalDisplay - parseInt(displayActual);
     document.getElementById("display").value = totalDisplay;
@@ -44,7 +43,7 @@ function suma(e) {
   multiplicar = false
   dividir = false
   primerOperacion = false;
-  e.target.removeEventListener(e.type, suma)
+  //e.target.removeEventListener(e.type, suma)
 }
 
 //RESTA_________________________________________________________________________
