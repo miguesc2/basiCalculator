@@ -1,0 +1,18 @@
+#display{
+    margin-right: 20px;
+}
+.numero{
+    width: 60px;
+    height: 60px;
+}
+table{
+    margin: auto;
+}
+.dColor{
+    height: 30px;
+    background-color: rgb(54, 21, 21);
+    border: medium #FFF;
+    color: white;
+    font-size: 17px;
+    padding: 5px;
+}
