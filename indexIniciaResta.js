@@ -34,11 +34,21 @@ function suma() {
       totalDisplay = totalDisplay - parseInt(displayActual);
       document.getElementById("display").value = totalDisplay;
     } else if(multiplicar) {
-      totalDisplay = totalDisplay * parseInt(displayActual);
-      document.getElementById("display").value = totalDisplay;
+      if(displayActual !==0) {
+        totalDisplay = totalDisplay * parseInt(displayActual);
+        document.getElementById("display").value = totalDisplay;
+      } else {
+        totalDisplay = totalDisplay
+        document.getElementById("display").value = totalDisplay;
+      }
     } else if(dividir) {
-      totalDisplay = totalDisplay / parseInt(displayActual);
-      document.getElementById("display").value = totalDisplay;
+        if(displayActual !== 0) {
+          totalDisplay = totalDisplay / parseInt(displayActual);
+          document.getElementById("display").value = totalDisplay;
+        } else {
+          totalDisplay = totalDisplay;
+          document.getElementById("display").value = totalDisplay;
+        }
     } else {
       totalDisplay = totalDisplay + parseInt(displayActual);
       document.getElementById("display").value = totalDisplay;
@@ -64,14 +74,29 @@ function resta() {
         totalDisplay = totalDisplay + parseInt(displayActual);
         document.getElementById("display").value = totalDisplay;
       } else if(multiplicar) {
-        totalDisplay = totalDisplay * parseInt(displayActual);
-        document.getElementById("display").value = totalDisplay;
+        if(displayActual !== 0) {
+          totalDisplay = totalDisplay * parseInt(displayActual);
+          document.getElementById("display").value = totalDisplay;
+        } else {
+          totalDisplay = totalDisplay
+          document.getElementById("display").value = totalDisplay;
+        }
       } else if(dividir) {
-        totalDisplay = totalDisplay / parseInt(displayActual);
-        document.getElementById("display").value = totalDisplay;
+        if(displayActual !== 0) {
+          totalDisplay = totalDisplay / parseInt(displayActual);
+          document.getElementById("display").value = totalDisplay;  
+        } else {
+          totalDisplay = totalDisplay;
+          document.getElementById("display").value = totalDisplay;
+        }
       } else {
-        totalDisplay = totalDisplay - parseInt(displayActual);
-        document.getElementById("display").value = totalDisplay;
+        if(displayActual !== 0) {
+          totalDisplay = totalDisplay - parseInt(displayActual);
+          document.getElementById("display").value = totalDisplay;  
+        } else {
+          totalDisplay = totalDisplay;
+          document.getElementById("display").value = totalDisplay;
+        }
       }
     } else {
       totalDisplay = parseInt(displayActual);
@@ -100,8 +125,13 @@ function multiplicacion() {
         totalDisplay = totalDisplay - parseInt(displayActual);
         document.getElementById("display").value = totalDisplay;
       } else if(dividir) {
-        totalDisplay = totalDisplay / parseInt(displayActual);
-        document.getElementById("display").value = totalDisplay;
+        if(displayActual !== 0) {
+          totalDisplay = totalDisplay / parseInt(displayActual);
+          document.getElementById("display").value = totalDisplay;
+        } else {
+          totalDisplay = totalDisplay;
+          document.getElementById("display").value = totalDisplay;
+        }
       } else {
         if(displayActual !== 0) {
           totalDisplay = totalDisplay * parseInt(displayActual);
@@ -138,8 +168,13 @@ function division() {
         totalDisplay = totalDisplay - parseInt(displayActual);
         document.getElementById("display").value = totalDisplay;
       } else if(multiplicar) {
-        totalDisplay = totalDisplay * parseInt(displayActual);
-        document.getElementById("display").value = totalDisplay;
+        if(displayActual !==0) {
+          totalDisplay = totalDisplay * parseInt(displayActual);
+          document.getElementById("display").value = totalDisplay;
+        } else {
+          totalDisplay = totalDisplay;
+          document.getElementById("display").value = totalDisplay;
+        }
       } else {
         if(displayActual !== 0) {
           totalDisplay = totalDisplay / parseInt(displayActual);

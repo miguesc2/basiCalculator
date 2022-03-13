@@ -1,18 +1,45 @@
-#display{
-    margin-right: 20px;
+body {
+    background: linear-gradient(#000000, #727272);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    background-color: rgba(230, 209, 209, 0);
+    border: rgb(104, 214, 82) 2px solid;
+    border-radius: 11px;
+    box-shadow: rgb(104, 214, 82) 0 0 20px, rgb(104, 214, 82) -0 -0 20px;
+    width: 30%;
+    height: 90%;
+}
+
+tr {
+    text-align: center;
 }
 .numero{
-    width: 60px;
-    height: 60px;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    color: rgb(198, 235, 191);
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 10px;
+    border-color: rgb(104, 214, 82);
+    background-color: black;
 }
-table{
-    margin: auto;
-}
+
 .dColor{
-    height: 30px;
-    background-color: rgb(54, 21, 21);
-    border: medium #FFF;
-    color: white;
-    font-size: 17px;
-    padding: 5px;
+    height: 40px;
+    background-color: black;
+    border-color: rgb(104, 214, 82);
+    border-radius: 10px;
+    color: rgb(198, 235, 191);
+    font-size: 1.5em;
+    padding-left: 10px;
+    outline: none;
+    width: 91%;
+    margin: 10px 0;
 }
